@@ -1,0 +1,74 @@
+{
+    "song1":{
+        "songName":"karruku choopu",
+        "movieName":"raayudu",
+        "artistName":"D.Imman, Vandana Srinivasan, Jithin Raj, Jayamoorthy",
+        "movieNameimageUrl":"",
+        "song":"./songs/karrukuchoopu"
+    
+    },
+    "song2":{
+        "songName":"Malli Raava",
+        "movieName":"Malli Raava",
+        "artistName":"Sunitha Upaadhrastha",
+        "movieNameimageUrl":"",
+        "song":"./songs/malliraavaa"
+    
+    },
+    "song3":{
+        "songName":"Vintunnaavaa",
+        "movieName":"Ye maaya chesaave",
+        "artistName":"Kartheek, shreya ghoshal",
+        "movieNameimageUrl":"",
+        "song":"./songs/vintunaavaa"
+    },
+    "song4":{
+        "songName":"Isque vaala love",
+        "movieName":"Student of the year",
+        "artistName":"Neeti mohan, salim merchant, shekar raavjiani",
+        "movieNameimageUrl":"",
+        "song":"./songs/ishqvaalalove"
+    },
+    "song5":{
+        "songName":"chaleya",
+        "movieName":"jawaan",
+        "artistName":"Arjith singh, shilpa rao",
+        "movieNameimageUrl":"",
+        "song":"./songs/chaleya"
+    },
+    "song6":{
+        "songName":"paccha elai",
+        "movieName":"love today",
+        "artistName":"yuvan sankar raaja",
+        "movieNameimageUrl":"",
+        "song":"./songs/pacchaelai"
+    },"song7":{
+        "songName":"yaanzi",
+        "movieName":"vikram vedha",
+        "artistName":"Anirudh ravichandhan, shakthisree gopaalan",
+        "movieNameimageUrl":"",
+        "song":"./songs/yaanji"
+    },
+    "song8":{
+        "songName":"kalallo",
+        "movieName":"viroopaaksha",
+        "artistName":"Anjaneesh lokanaath, anuraag kulakarni",
+        "movieNameimageUrl":"",
+        "song":"./songs/"
+    },
+    "song9":{
+        "songName":"kaanunna kalyaanam",
+        "movieName":"seetharaamam",
+        "artistName":"Anuraag kulakarni, sindhuri S",
+        "movieNameimageUrl":"",
+        "song":"./songs/kaanunnakalyanam"
+    },
+    "song10":{
+        "songName":"Kilimajaaroo",
+        "movieName":"Robo",
+        "artistName":"Javed Ali, Chinmayi",
+        "movieNameimageUrl":"",
+        "song":"./songs/kilimanjaaro"
+    }
+
+}

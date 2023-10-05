@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="page">
+        <div class="sidebar">
+            <nav>
+                <span class="ellipse"><i class="fa-solid fa-ellipsis" id="dots"></i></span>
+                <span><i class="fa-solid fa-house"></i></span>
+                <span class="sidebar-search"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <span class="heart"><i class="fa-solid fa-heart"></i></span>
+                <span class="profile"></span>
+                <div class="app-menu">
+                    <ul>
+                        <li class="file common">File <span><i class="fa-solid fa-caret-right"></i></span></li>
+                        <li class="edit common">Edit <span><i class="fa-solid fa-caret-right"></i></span></li>
+                        <li class="view common">View <span><i class="fa-solid fa-caret-right"></i></span></li>
+                        <li class="playback common">Playback <span><i class="fa-solid fa-caret-right"></i></span></li>
+                        <li class="help common">Help <span><i class="fa-solid fa-caret-right"></i></span></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="file-content item-details">
+                <ul class="content-list">
+                    <li>New Playlist <span>Ctrl+N</span></li>
+                    <li>New Playlist Folder <span>Ctrl+Shift+N</span></li>
+                    <li>Private Session <span>Ctrl+N</span></li>
+                    <li>Log Out <span>Ctrl+Shift+W</span></li>
+                    <li>Exit <span>Ctrl+Shift+Q</span></li>
+                </ul>
+            </div>
+            <div class="edit-content item-details">
+                <ul class="content-list">
+                    <li>Undo <span>Ctrl+Z</span></li>
+                    <li>Redo <span>Ctrl+Y</span></li>
+                    <li>Cut <span>Ctrl+X</span></li>
+                    <li>Copy <span>Ctrl+C</span></li>
+                    <li>Paste <span>Ctrl+V</span></li>
+                    <li>Delete <span>Del</span></li>
+                    <li>Select All <span>Ctrl+A</span></li>
+                    <li>Search <span>Ctrl+L</span></li>
+                    <li>Filter <span>Ctrl+F</span></li>
+                    <li>Preferences <span>Ctrl+P</span></li>
+                </ul>
+            </div>
+            <div class="view-content item-details">
+                <ul class="content-list">
+                    <li>Zoom In <span>Ctrl+=</span></li>
+                    <li>Zoom Out <span>Ctrl+-</span></li>
+                    <li>Reset Zoom <span>Ctrl+O</span></li>
+                    <li>Hardware Acceleration</li>
+                    <li>Friend Activity</li>
+                </ul>
+            </div>
+            <div class="playback-content item-details">
+                <ul class="content-list">
+                    <li>Play <span>Space</span></li>
+                    <li>Next <span>Ctrl+Right Arrow</span></li>
+                    <li>Previous <span>Ctrl+Left Arrow</span></li>
+                    <li>Seek Forward <span>Shift+Right Arrow</span></li>
+                    <li>Seek Backward <span>Shift+Left Arrow</span></li>
+                    <li>Shuffle <span>Ctrl+S</span></li>
+                    <li>Repeat <span>Ctrl+R</span></li>
+                    <li>Volume Up <span>Ctrl+Up Arrow</span></li>
+                    <li>Volume Down <span>Ctrl+Down Arrow</span></li>
+                </ul>
+            </div>
+            <div class="help-content item-details">
+                <ul class="content-list">
+                    <li>Spotify Help <span>F1</span></li>
+                    <li>Spotify Community</li>
+                    <li>Your Account</li>
+                    <li>Third-party Software</li>
+                    <li>About Spotify</li>
+                </ul>
+            </div>
+        </div>
+        <div class="home-screen">
+            <nav>
+                <div class="cevrons">
+                    <span><i class="fa-solid fa-chevron-left"></i></span>
+                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                </div>
+                <div class="ac-not-peop">
+                    <button class="ex-prm">Explore Premium</button>
+                    <span><i class="fa-regular fa-bell"></i></span>
+                    <span><i class="fa-solid fa-people-group"></i></span>
+                    <span><i class="fa-regular fa-user"></i></span>
+                </div>
+            </nav>
+        </div>
+        <div class="main-content">
+            <div class="search-content">
+                <h3>Browse all</h3>
+                <div class="categories">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div class="half-category"></div>
+                    <div class="half-category"></div>
+                    <div class="half-category"></div>
+                    <div class="half-category"></div>
+                    <div class="half-category"></div>
+                    <div class="half-category"></div>
+                </div>
+            </div>
+        </div>
+        <audio id="song">
+        </audio>
+
+        <div class="song-container">
+            <img src="" id="songImg">
+        </div>
+
+        <div class="music-icons">
+            <span><i class="fa-solid fa-shuffle"></i></span>
+            <span><i class="fa-solid fa-backward-step" onclick="previousSong()"></i></span>
+            <span><i class="fa-solid fa-play" id="cntrlIcon" onclick="playAndPause()"></i></span>
+            <span><i class="fa-solid fa-forward-step" onclick="nextSong()"></i></span>
+            <span><i class="fa-solid fa-repeat"></i></span>
+        </div>
+        <div class="song-range">
+            <input type="range" id="rangeInp">
+        </div>
+    </div>
+</body>
+</html>
